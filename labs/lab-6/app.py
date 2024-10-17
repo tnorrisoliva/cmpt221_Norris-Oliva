@@ -12,12 +12,43 @@ from db.schema.user import User
 def index():
     return render_template('index.html')
 
-@app.route('/signup')
+@app.route('/signup', methods = ['GET','POST'])
 def signup():
+    if request.method == 'POST':
+        #query = f"""INSERT INTO "Users" ("FirstName","LastName","Email","PhoneNumber","Password")
+               # VALUES ('{request.form["FirstName"]}',
+                      #  '{request.form["LastName"]}',
+                       # '{request.form["Email"]}',
+                       # '{request.form["PhoneNumber"]}',
+                      #  '{request.form["Password"]}'
+               # );"""
+        query= insert(User).values(request.form)
+        
+        
+        with app.app_context():
+            db.session.execute(query)
+
+            db.session.commit()
+        return redirect(url_for('index'))
     return render_template('signup.html')
 
-@app.route('/login')
+@app.route('/login', methods = ['GET','POST'])
 def login():
+    if request.method == 'POST':
+            #query = f"""INSERT INTO "Users" ("Email","Password")
+                #VALUES ('{request.form["Email"]}',
+                        #'{request.form["Password"]}'
+                        #
+                        #
+                        #
+                #);"""
+       # query= insert(User).values(request.form)
+        
+        with app.app_context():
+            db.session.execute(query)
+
+            db.session.commit()
+        return redirect(url_for('index'))
     return render_template('login.html')
 
 @app.route('/users')
