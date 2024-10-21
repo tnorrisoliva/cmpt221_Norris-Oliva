@@ -1,0 +1,27 @@
+p{
+    color: white;
+    text-align: center;
+}
+h1{
+    text-align: center;
+}
+a{
+    color: white;
+    text-align: center;
+    font-size: 200px;
+    text-decoration: none;
+    
+}
+a:hover{
+    color: white;
+    
+}
+a:link{
+    color:white;
+    
+}
+a:active{
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+}

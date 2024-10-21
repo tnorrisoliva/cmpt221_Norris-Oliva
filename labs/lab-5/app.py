@@ -8,6 +8,16 @@ from db.server import app
 def index():
     return render_template("index.html")
 
+@app.route('/blackpage')
+def blackpage():
+    return render_template("blackpage.html")
+@app.route('/whitepage')
+def whitepage():
+    return render_template("whitepage.html")
+@app.route('/webpage')
+def webpage():
+    return render_template("webpage.html")
+
 if __name__ == "__main__":
     # debug refreshes your application with your new changes every time you save
     app.run(debug=True)

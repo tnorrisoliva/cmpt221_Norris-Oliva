@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+
+    
+}
+a:hover{
+    color:white;
+}
+a#website:hover{
+    color: grey;
+}
+a#fake:hover{
+    color:red;
+}
