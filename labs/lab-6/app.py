@@ -27,7 +27,6 @@ def signup():
         
         with app.app_context():
             db.session.execute(query)
-
             db.session.commit()
         return redirect(url_for('index'))
     return render_template('signup.html')
@@ -35,20 +34,17 @@ def signup():
 @app.route('/login', methods = ['GET','POST'])
 def login():
     if request.method == 'POST':
-            #query = f"""INSERT INTO "Users" ("Email","Password")
-                #VALUES ('{request.form["Email"]}',
-                        #'{request.form["Password"]}'
-                        #
-                        #
-                        #
-                #);"""
-       # query= insert(User).values(request.form)
+    
+        
+        query= insert(User).values(request.form)
+        
         
         with app.app_context():
             db.session.execute(query)
-
             db.session.commit()
         return redirect(url_for('index'))
+        
+
     return render_template('login.html')
 
 @app.route('/users')
