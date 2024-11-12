@@ -17,8 +17,8 @@
 
 
 ### Lab 
-#### 1. Analyze the code provided in `app.py`
-Carefully review the code in `app.py`. Understand its functions, queries, and expected behavior.  
+#### 1. Analyze the code provided in `app/app.py`
+Carefully review the code in `app/app.py`. Understand its functions, queries, and expected behavior.  
 
 #### 2. Identify Test Cases
 Determine the different scenarios and edge cases you need to cover with your tests. Consider various inputs, ouputs, and potential errors.
@@ -35,6 +35,8 @@ pytest tests/test.py -s
 # or 
 pytest tests/test.py -v
 ```
+
+note: there is no need to run `python3 app.py` in this lab, but if you do, cd into the app directory with `cd app` first.
 
 ### Submission
 Once you have completed this lab, push your work to Github, then open a pull request, assign me as a reviewer, copy the pull request URL, and paste it in Brightspace. Don't forget to deactivate your virtual environment!
