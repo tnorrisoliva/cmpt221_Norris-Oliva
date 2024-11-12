@@ -37,3 +37,6 @@ venv.bak/
 
 # course material
 .answers
+
+# mac
+.DS_Store
