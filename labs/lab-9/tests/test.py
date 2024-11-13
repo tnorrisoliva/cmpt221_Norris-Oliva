@@ -9,7 +9,7 @@ def test_db_connection(db_session):
     result = db_session.execute(text("SELECT 1"))
     assert result.scalar() == 1
 
-# test to insert and select a user
+# test to insert a user
 # you can count this as one of your 5 test cases :)
 def test_insert_user(db_session, sample_signup_input):
     insert_stmt = insert(User).values(sample_signup_input)
