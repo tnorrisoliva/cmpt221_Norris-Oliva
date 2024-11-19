@@ -21,6 +21,10 @@ Install Sphinx using Pip.
 ```bash
 # -U ensures we get the most up to date version
 pip install -U sphinx
+# or
+python3 pip install -U sphinx
+# or
+python pip install -U sphinx
 ```
 
 #### 2. Set up the Sphinx source directory
@@ -69,22 +73,19 @@ To deploy your documentation, issue:
 make html
 # for windows users without make installed:
 make.bat html
+# or
+python3 -m sphinx.cmd.build . _build
+# or
+python -m sphinx.cmd.build . _build
 ```
 
-then, create a gh-pages branch
-```bash
-git checkout -b gh-pages
-```
-
-Drag all of the HTML from docs/_build/html into root and delete everything else (yes, really)
-
-### Submission
-Once you have completed this lab, push your work to Github, then open a pull request, assign me as a reviewer, copy the pull request URL, and paste it in Brightspace. Don't forget to deactivate your virtual environment!
+# Submission
+In your CMPT221 github repo, click `settings`. Then, from the left menu, click `Pages`. Click on the drop down in the Branch section and select the `gh-pages` branch. Once that's done, Github will tell you where your site is published. Copy and paste that link and submit it to brightspace. 
 
 ```bash
 git add .
-git commit -m "completed lab 9"
-git push --set-upstream origin lab-9
+git commit -m "completed lab 10"
+git push --set-upstream origin lab-10
 # or
 git push
 ```
