@@ -1,0 +1,8 @@
+body{
+    background-color: beige;
+}
+div{
+    align-self: center;
+    border:10px;
+    border-color: black;
+}
