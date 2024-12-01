@@ -57,19 +57,19 @@ with app.app_context():
     db.session.commit()
 
     # # write a query to select all records from the Courses table
-    query_2 = """SELECT * FROM Courses; """
+    query_2 = """SELECT * FROM "Courses"; """
     courses = db.session.execute(text(query_2))
     print(f"\n\n----------- Courses Table")
     for course in courses:
         print(course)
 
     # # write a query to update 1 record in the Courses table
-    query_3 = """UPDATE Courses SET Year= '2024'; """
+    query_3 = """UPDATE "Courses" SET "Year"= '2024'; """
     db.session.execute(text(query_3))
     db.session.commit()
 
     # # write a query to delete 1 record in the Courses table
-    query_4 = """DELETE FROM Courses WHERE CourseName = 'SD1'; """
+    query_4 = """DELETE FROM "Courses" WHERE "CourseName" = 'SD1'; """
     db.session.execute(text(query_4))
     db.session.commit()
 
