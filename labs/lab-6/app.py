@@ -40,7 +40,7 @@ def login():
 
         user = db.session.query(User).filter_by(Email=userEmail).first()
         if user and user.Password == password:
-            
+             
             
             session['profile_index'] = 1
             return redirect(url_for('index'))
