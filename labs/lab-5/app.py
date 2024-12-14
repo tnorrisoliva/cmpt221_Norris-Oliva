@@ -7,6 +7,9 @@ from db.server import app
 @app.route('/')
 def index():
     return render_template("index.html")
+@app.route('/blackpage')
+def blackpage():    
+    return render_template("blackpage.html")
 
 if __name__ == "__main__":
     # debug refreshes your application with your new changes every time you save

@@ -1,14 +1,65 @@
 body {
-    background-color: lightblue;
+    background-color: wheat;
+  }
+  header {
+    background-color: rgba(245, 222, 179, 0.856);
+    text-align: center;
+    font-size: xx-large;
+    
+    
+
+  }
+  a{ 
+    
+    text-decoration:line-through;
+    
+    
   }
   
   h1 {
     color: blueviolet;
     text-align: center;
+    text-decoration:line-through;
+
+    
+    
   }
+  h2 {
+    color: blueviolet;
+    text-align: center;
+    text-decoration:line-through;
+    
+    
+  }
+  h3 {
+    color: blueviolet;
+    text-align: center;
+    text-decoration:line-through;
+    
+  }
+  h4 {
+    color: blueviolet;
+    text-align: center;
+    text-decoration:line-through;
+    
+  }
+  h5 {
+    color: blueviolet;
+    text-align: center;
+    text-decoration:line-through;
+    
+  }
+  h6 {
+    color: blueviolet;
+    text-align: center;
+    text-decoration:line-through;
+  }
+
   
   p {
     font-family: verdana;
     font-size: 20px;
     text-align: center;
+    color: blueviolet;
+    text-decoration:line-through;
   }
